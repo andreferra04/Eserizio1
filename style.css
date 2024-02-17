@@ -161,7 +161,52 @@ main h1,h2{
     width: 400px;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
-#right-article{
+/* #right-article{
     margin-left: 10%;
+} */
+
+.articles a {
+    text-decoration: none;
+    background-color: #c61620;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+.articles a:hover {
+    background-color: #ff6666;
+}
+
+.articles__wrapper {
+    justify-content: space-evenly;
+}
+
+.articles h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #menu li {
+        display: inline;
+    }
+
+    header {
+        height: 80px;        
+    }
+
+    .homepage header {
+        height: 80vh;
+    }
 }
