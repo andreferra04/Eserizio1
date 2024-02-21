@@ -83,7 +83,7 @@ header {
     justify-content: center;
     background-position: center bottom;
     
-    background-image: url(immagine.jpg);
+    background-image: url(/template/images/immagine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -107,6 +107,10 @@ header {
 #menu a:hover {
     color: blue;
     text-decoration: underline;
+}
+#menu{
+    display: flex;
+    align-items: center;
 }
 .top-menu {
     list-style: none;
@@ -136,8 +140,7 @@ body {
 }
 
 footer{
-    height: 30vh;
-    
+   
     display: flex;
     color: #333;
     background-color: #eee;
