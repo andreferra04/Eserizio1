@@ -4,7 +4,7 @@
         <title>Prima Pagina</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="page" >
+    <body class="page">
         <header>
             <div class="top-menu">
                 <div id="logo">
@@ -18,7 +18,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="/Order online">Order online</a>
+                                <a href="/prenota.html">Prenota</a>
                             </li>
                             <li>
                                 <a href="/about">About</a>
@@ -33,20 +33,28 @@
                     </nav>
                </div>   
         </header>
-        <main>
+    <main>
             <h1>Friuland</h1>
             <h2>Il parco divertimento delle pannocchie</h2>
-    
-            <form>
-                <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" required />
-    
+            
+        <div class="form-wrapper">
+            <form method="POST" action="/richiesta">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required />
+                </div>
+
+                <div>
                 <label for="cognome">Cognome</label>
                 <input id="cognome" name="cognome" type="text" required />
-    
+                </div>
+
+                <div>
                 <label for="data">Data di prenotazione</label>
                 <input id="data" name="data" type="date" required />
-    
+                </div>
+
+                <div>
                 <label for="num_adulti">Adulti</label>
                 <select id="num_adulti" name="num_adulti">
                     <option>1</option>
@@ -55,7 +63,9 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
+                </div>
     
+                <div>
                 <label for="num_ridotti">Ridotti</label>
                 <select id="num_ridotti" name="num_ridotti">
                     <option value="0">Nessun ridotto</option>
@@ -65,10 +75,17 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
+                </div>
+
+                <div class="align-column">
+                    <label for="note">Descrivi la richiesta</label>
+                    <textarea name="note" id="note" cols="20" rows="10"  placeholder="Inserisci la tua nota"></textarea>
+                </div>
     
                 <input type="submit" value="Invia richiesta" />
             </form>
-        </main>
+        </div>
+    </main>
         <footer>
             <div class="left">
                 <img src="logo.png" alt="logo" width="100px" height="57px">
