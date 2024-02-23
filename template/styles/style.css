@@ -228,12 +228,17 @@ footer a{
 
 .right li{
     list-style: none;
-    display: inline;
+    /* display: inline; */
     margin-left: 20px;
     
 }
 .right ul{
     padding-left: 0px;
+    display: flex;
+    margin-bottom: 2rem;
+}
+#last-ul{
+    margin-top: 2rem;
 }
 main h1,h2{
     text-align: center;
