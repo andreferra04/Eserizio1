@@ -377,4 +377,41 @@ h2 {
     footer{
         flex-direction: column;
     }
+    #menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu li+li{
+        margin-top: 2rem;
+    }
+    .articles__wrapper{
+        flex-direction: column;
+        align-items: center;
+        }
+    .articles{
+        margin-left: 0;
+    }
+    .left, .right, .middle-left, .middle-right{
+        width: 100%;
+    }
+    .left p{
+        margin-left: 0;
+        
+    }
+    .left{
+        align-items: baseline;
+    }
+    .left img{
+        position: relative;
+        right: 30px
+    }
+    .right{
+        align-items: baseline;
+        margin-top: 1rem;
+    }
+    .middle-left,.middle-right{
+        width: 100%;
+        align-items: baseline;
+    }
+    
 }
