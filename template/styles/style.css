@@ -359,7 +359,9 @@ h2 {
 .form-wrapper input[type="submit"]{
     margin-left: 50%;
 }
-
+.page .top-menu #logo img{
+    object-fit: contain;
+}
 @media (min-width: 768px) {
     #menu li {
         display: inline;
